@@ -8,6 +8,12 @@ export interface Account {
   transactionIds: string[]
 }
 
+export interface Goal {
+  // ...
+
+  icon: string | null
+}
+
 export interface Application {
   id: string
   created: Date

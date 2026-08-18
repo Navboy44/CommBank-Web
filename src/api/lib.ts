@@ -4,6 +4,7 @@ import { Goal, Transaction, User } from './types'
 
 export const API_ROOT = 'https://fencer-commbank.azurewebsites.net'
 
+
 export async function getUser(): Promise<User | null> {
   try {
     const response = await axios.get(`${API_ROOT}/api/User/${user.id}`)
